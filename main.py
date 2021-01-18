@@ -5,6 +5,7 @@ A script to calculate the cost of slipstream
 """
 import typer
 import wasabi
+import time
 
 add_price = 0
 accessories = {"Crocodile Pillow for back seat": 4000,
@@ -234,3 +235,4 @@ def calculate_price():
 if __name__ == "__main__":
     while not calculate:
         calculate_price()
+    time.sleep(2)
