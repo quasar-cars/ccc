@@ -6,7 +6,7 @@ A script to calculate the cost of slipstream
 import typer
 import wasabi
 
-add_price: int = 0
+add_price = 0
 accessories = {"1": 1, "2": 1, "3": 1}
 comfort = ""
 color = ""
