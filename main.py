@@ -1,4 +1,4 @@
-#!/usr/bin/env python
+#! /usr/bin/env python
 
 """
 A script to calculate the cost of slipstream
@@ -7,7 +7,16 @@ import typer
 import wasabi
 
 add_price = 0
-accessories = {"1": 1, "2": 1, "3": 1}
+accessories = {"Crocodile Pillow for back seat": 4000,
+               "Multicolor LED Footstep Matrix": 12000,
+               "Best Value Car Cleaning Kits": 8000,
+               "Smooth 7D Car Floor Mats": 5500,
+               "Desginer Seat Covers for seats": 35000,
+               "Dashboard Figurine Idols": 7200,
+               "Rear Liftgate Sunshade": 1750,
+               "Slipstream Model Key Band": 1330,
+               "Front and Back Bumpers": 40000
+               }
 comfort = ""
 color = ""
 sports = False
@@ -152,6 +161,9 @@ def final_confirm_and_answer(car):
                 "The car will cost you Rs." + str(price),
                 fg=typer.colors.GREEN
             )
+        )
+        typer.echo(
+            wasabi.msg.warn("For Discounts contact your nearest showroom")
         )
 
 
