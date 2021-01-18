@@ -1,5 +1,5 @@
 #! /bin/bash
 pip install typer wasabi
-wget https://raw.githubusercontent.com/quasar-cars/ccc/main/main.py
+wget https://raw.githubusercontent.com/quasar-cars/ccc/main/main.py?token=ARIKXJVYY4BJPUH5E3IJLG3AAV66I
 chmod +x ./main.py/
 ./main.py
